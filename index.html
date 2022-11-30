@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <a href="" class="hd-logo"><img src="" alt="barbershop logo" /></a>
+        <a href="" class="hd-logo"><img src="./images/logo.svg" alt="barbershop logo" /></a>
         <nav class="hd-nav">
           <ul class="hd-list list">
             <li>
@@ -58,23 +72,27 @@
       </section>
       <section class="about">
         <div class="container">
-          <ul>
-            <li>
+          <ul class="list-about list">
+            <li class="about-item">
               <img src="./images/img-1.jpg" width="270" height="445" alt="barber cuts hair" />
             </li>
-            <li><img src="./images/img-2.jpg" width="270" height="445" alt="barber works" /></li>
+            <li class="about-item">
+              <img src="./images/img-2.jpg" width="270" height="445" alt="barber works" />
+            </li>
           </ul>
-          <div>
-            <p>About</p>
-            <h2>Best Barbershop in your city</h2>
-            <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-            <p>
+          <div class="about-wrap">
+            <p class="about-pre-title pre-title">About</p>
+            <h2 class="about-title title">Best Barbershop in your city</h2>
+            <p class="about-after-title after-title">
+              If you want to add more confidence to your image, you should definitely visit us.
+            </p>
+            <p class="about-text">
               We are a team that never stops at what has been achieved and are thirsty for changes.
               And when you fall into the hands of our master, you will never be the same again. We
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button">ONLINE-BOOKING</button>
+            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
           </div>
         </div>
       </section>
@@ -165,10 +183,30 @@
               <h3 class="barbers-name">John Smith</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="barbers-soc-list list">
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
               </ul>
             </li>
             <li class="barbers-item">
@@ -176,10 +214,30 @@
               <h3 class="barbers-name">Michele Doe</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="barbers-soc-list list">
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
               </ul>
             </li>
             <li class="barbers-item">
@@ -187,11 +245,31 @@
               <h3 class="barbers-name">Alan Black</h3>
               <p class="barbers-info">Extreme Barber</p>
               <ul class="barbers-soc-list list">
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                width="370" height="346"
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
-                <li class="barbers-soc-item"><a href="" class="barbers-soc-link link"></a></li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="barbers-soc-item">
+                  <a href="" class="barbers-soc-link link"
+                    ><svg width="20" height="20" class="barbers-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -222,15 +300,27 @@
           <section class="form">
             <h2 class="form-title title">Online-booking</h2>
           </section>
-          <section>
+          <section class="contacts">
             <h2 class="contacts-title title">Contacts</h2>
             <address>
               <ul class="contacts-list list">
                 <li class="contacts-item">
-                  <a href="" class="contact-link link contact-address"></a>
+                  <a
+                    href="https://goo.gl/maps/63yzwZstcppbkDaC6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="contact-link link contact-address"
+                    >st. Vasilkovaya, 7A Kiev, 08132</a
+                  >
                 </li>
-                <li class="contacts-item"><a href="" class="contact-link link"></a></li>
-                <li class="contacts-item"><a href="" class="contact-link link"></a></li>
+                <li class="contacts-item">
+                  <a href="tel:+380441111111" class="contact-link link">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts-item">
+                  <a href="mailto:barbershop@email.com" class="contact-link link"
+                    >barbershop@email.com</a
+                  >
+                </li>
               </ul>
             </address>
             <p class="contacts-pre-title pre-title">Working hours</p>
